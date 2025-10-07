@@ -1,4 +1,4 @@
-import { add, subtract, multiply, divide } from "./calculator.js";
+const { add, subtract, multiply, divide } = require("./calculator");
 
 console.log("2 + 3 =", add(2, 3));
 console.log("5 - 1 =", subtract(5, 1));
