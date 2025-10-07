@@ -1,0 +1,27 @@
+{
+  "name": "calculator-ci-example",
+  "version": "1.0.0",
+  "description": "Exemplo simples de calculadora com testes unitários (Jest) e CI com GitHub Actions",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:jest": "jest --coverage",
+    "lint": "echo \"(Opcional) Adicione ESLint aqui\"",
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ]
+  }
+}
