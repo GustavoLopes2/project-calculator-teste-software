@@ -24,4 +24,4 @@ jobs:
         run: npm ci || npm i
 
       - name: Run tests (Jest) with coverage
-        run: npm run test:jest
+        run: npm test
