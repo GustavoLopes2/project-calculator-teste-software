@@ -21,7 +21,7 @@ describe("Calculator", () => {
     expect(() => divide(1, 0)).toThrow(/Divisão por zero/);
   });
 
-  //test("erro proposital", () => {
-  //  throw new Error("Erro proposital para testar o Actions");
-  //});
+  test("erro proposital", () => {
+    throw new Error("Erro proposital para testar o Actions");
+  });
 });
